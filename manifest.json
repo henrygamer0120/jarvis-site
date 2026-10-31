@@ -1,0 +1,10 @@
+{
+  "name": "J.A.R.V.I.S.",
+  "short_name": "Jarvis",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#020817",
+  "theme_color": "#020817",
+  "description": "Assistente pessoal futurista em estilo Stark.",
+  "icons": []
+}

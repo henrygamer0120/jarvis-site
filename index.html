@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#020817" />
+    <meta name="description" content="J.A.R.V.I.S. assistente pessoal futurista em estilo Stark." />
+    <title>J.A.R.V.I.S.</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="J.A.R.V.I.S. brand">
+          <span class="brand-dot"></span>
+          <span>J.A.R.V.I.S.</span>
+        </div>
+        <div class="online-pill">
+          <span class="pill-dot"></span>
+          Online
+        </div>
+      </header>
+
+      <aside class="side-panel">
+        <div class="panel-card">
+          <h3>Próximas ações</h3>
+          <ul>
+            <li><span>Revisar agenda</span><b>02</b></li>
+            <li><span>Resumo diário</span><b>01</b></li>
+            <li><span>Plano do dia</span><b>03</b></li>
+          </ul>
+        </div>
+
+        <div class="panel-card">
+          <h3>Operações</h3>
+          <ul>
+            <li><span>Tarefa</span><b>⚡</b></li>
+            <li><span>Resumo</span><b>📊</b></li>
+            <li><span>Agenda</span><b>📅</b></li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <section class="hero">
+          <div>
+            <h1>Assistente pessoal de alta performance</h1>
+          </div>
+          <div class="hero-badge">Stark Protocol</div>
+        </section>
+
+        <section id="chat" class="chat" aria-live="polite">
+          <div class="message jarvis">
+            <span class="label">J.A.R.V.I.S.</span>
+            Sistema inicializado, Senhor. Estou pronto para gerenciar suas tarefas, compromissos e relatórios com máxima eficiência.
+          </div>
+        </section>
+
+        <section class="composer" aria-label="Entrada de comando">
+          <div class="composer-row">
+            <button id="voiceBtn" class="icon-btn" aria-label="Usar microfone">🎙️</button>
+            <input id="inputText" type="text" placeholder="Envie uma ordem para o Jarvis..." />
+            <button id="sendBtn" class="send-btn">Enviar</button>
+          </div>
+
+          <div class="quick-actions">
+            <button class="chip" data-command="Crie uma tarefa para revisar o projeto">Tarefa</button>
+            <button class="chip" data-command="Resuma os meus dados do dia">Resumo</button>
+            <button class="chip" data-command="Me diga minha agenda de hoje">Agenda</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
